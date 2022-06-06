@@ -1,0 +1,140 @@
+:root {
+    --width: 20%;
+  }
+*{
+    box-sizing: border-box;
+}
+html{
+    background-color: #f1f1f1;
+    color:#fff;
+    font-size: 22px;
+}
+.row{
+    width: 100%;
+    clear: both;
+}
+.config{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding:0px 15px 15px;
+}
+.config>*{
+    flex: auto;
+}
+.config>span{
+    max-width: 45px;
+    padding: 14px;
+    font-size: 32px;
+    color: #000;
+}
+.config>input{
+    max-width: 150px;
+    border: none;
+    padding: 7px;
+    font-size: 18px;
+}
+.label{
+    padding-bottom: 0px !important;
+}
+.config>p{
+    max-width: 150px;
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    color:#000;
+}
+.config>input:nth-of-type(3){
+    margin:0px 30px;
+}
+.config>button{
+    max-width: 100%;
+    border: none;
+    padding: 7px;
+    background-color:lightsalmon;
+    color: #fff;
+    font-size: 24px;
+}
+.config>button:hover{
+    cursor: pointer;
+}
+.config>button:active{
+    opacity: 0.7;
+}
+#board{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.rows{
+    flex: auto;
+    display: flex;
+    flex-direction:row
+}
+.cell{
+    flex: auto;
+    text-align: center;
+    border:1px solid #fff;
+}
+.p1{
+    background-image: url(../img/p1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.p2{
+    background-image: url(../img/p2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.toast{
+    display: block;
+    position: fixed;
+    background-color: tomato;
+    color: #fff;
+    padding: 15px;
+    font-size: 22px;
+    left: 40%;
+    bottom: 0;
+}
+.game_win{
+    display: block;
+    position: fixed;
+    background-color:green;
+    color: #fff;
+    padding: 25px 60px;
+    font-size: 40px;
+    left: 38%;
+    bottom: 40%;
+    text-transform: capitalize;
+}
+.game_over{
+    display: block;
+    position: fixed;
+    background-color:tomato;
+    color: #fff;
+    padding: 15px 40px;
+    font-size: 40px;
+    left: 42%;
+    bottom: 40%;
+}
+#block-click{
+    display: block;
+    position: fixed;
+    padding: 15px;
+    font-size: 40px;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, 0.4);
+}
+#reload{
+    display:block;
+    margin:15px auto;
+    padding: 7px 30px;
+    border: none;
+    font-size: 20px;;
+}
